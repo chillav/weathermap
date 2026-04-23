@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weathermap/home/widgets/weather_globe.dart';
 
 import '../../core/extensions/int_extensions.dart';
+import '../mock_weather.dart';
 
 //TODO сделать базовые стили, паддинги и цвета
 class ForecastCard extends StatelessWidget {
