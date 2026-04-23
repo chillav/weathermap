@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:weathermap/home/widgets/weather_globe.dart';
 
+import '../../core/extensions/int_extensions.dart';
+
 //TODO сделать базовые стили, паддинги и цвета
 class ForecastCard extends StatelessWidget {
   final DailyForecast forecast;
@@ -30,7 +32,7 @@ class ForecastCard extends StatelessWidget {
         const Icon(Icons.cloud, color: Colors.white),
         const SizedBox(height: 8),
         Text(
-          '${forecast.high}°',
+          forecast.high.asDegree,
           style: const TextStyle(color: Colors.white, fontSize: 20),
         ),
         Text(
